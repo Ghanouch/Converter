@@ -8,8 +8,9 @@ public class Converter {
     public static void main(String args[]) {
 
         WSDL wsdl = new WSDL();
+        wsdl.setClientURL("hhhhhh");
 
-        System.out.print("Hello world");
+        System.out.print(wsdl.getClientURL());
 
     }
 
