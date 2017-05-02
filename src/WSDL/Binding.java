@@ -7,37 +7,6 @@ import java.util.ArrayList;
  */
 public class Binding {
 
-    public static class SoapBinding {
-
-        private String style;
-        private String transport;
-
-        public void setStyle(String style) {
-            this.style = style;
-        }
-
-        public void setTransport(String transport) {
-            this.transport = transport;
-        }
-
-        public String getStyle() {
-            return style;
-        }
-
-        public String getTransport() {
-            return transport;
-        }
-
-        public SoapBinding() {
-
-        }
-
-        public SoapBinding(String style, String transport) {
-            this.style = style;
-            this.transport = transport;
-        }
-    }
-
     private String name;
     private String type;
     private SoapBinding soapBinding;
@@ -51,7 +20,7 @@ public class Binding {
         this.type = type;
     }
 
-    public void setSoapBinding(Binding.SoapBinding soapBinding) {
+    public void setSoapBinding(SoapBinding soapBinding) {
         this.soapBinding = soapBinding;
     }
 
@@ -67,7 +36,7 @@ public class Binding {
         return type;
     }
 
-    public Binding.SoapBinding getSoapBinding() {
+    public SoapBinding getSoapBinding() {
         return soapBinding;
     }
 
@@ -91,7 +60,7 @@ public class Binding {
         operations  = new ArrayList<Operation>();
     }
 
-    public Binding(String name, String type, Binding.SoapBinding soapBinding, ArrayList<Operation> operations) {
+    public Binding(String name, String type, SoapBinding soapBinding, ArrayList<Operation> operations) {
         this.name = name;
         this.type = type;
         this.soapBinding = soapBinding;

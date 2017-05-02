@@ -76,6 +76,7 @@ public class Definition {
 
     public Types getTypes() { return types; }
 
+
     public Definition() {
         messages        = new ArrayList<Message>();
         services        = new ArrayList<Service>();
