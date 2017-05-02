@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Converter.iml" filepath="$PROJECT_DIR$/Converter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PFA convertor.iml" filepath="$PROJECT_DIR$/PFA convertor.iml" />
     </modules>
   </component>
 </project>

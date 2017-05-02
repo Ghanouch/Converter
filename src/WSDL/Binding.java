@@ -51,7 +51,7 @@ public class Binding {
         this.type = type;
     }
 
-    public void setSoapBinding(Binding.SoapBinding soapBinding) {
+    public void setSoapBinding(SoapBinding soapBinding) {
         this.soapBinding = soapBinding;
     }
 
@@ -67,7 +67,7 @@ public class Binding {
         return type;
     }
 
-    public Binding.SoapBinding getSoapBinding() {
+    public SoapBinding getSoapBinding() {
         return soapBinding;
     }
 
@@ -91,7 +91,7 @@ public class Binding {
         operations  = new ArrayList<Operation>();
     }
 
-    public Binding(String name, String type, Binding.SoapBinding soapBinding, ArrayList<Operation> operations) {
+    public Binding(String name, String type, SoapBinding soapBinding, ArrayList<Operation> operations) {
         this.name = name;
         this.type = type;
         this.soapBinding = soapBinding;
