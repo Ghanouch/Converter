@@ -1,13 +1,20 @@
 package WSDL;
 
+import javax.xml.bind.annotation.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by zGuindouOS on 03/05/2017.
  */
-public class PortType {
 
+@XmlRootElement(name = "wsdl:portType")
+@XmlAccessorType(XmlAccessType.FIELD)
+public class PortType implements Serializable{
+
+    @XmlAttribute
     private String name;
+    @XmlElement
     private ArrayList<Operation> operations;
 
     public void setName(String name) {

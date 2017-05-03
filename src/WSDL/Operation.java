@@ -1,17 +1,26 @@
 package WSDL;
 
 
+import javax.xml.bind.annotation.*;
+import java.io.Serializable;
+
 /**
  * Created by zGuindouOS on 02/05/2017.
  */
 
+@XmlRootElement(name = "wsdl:operation")
+@XmlAccessorType(XmlAccessType.FIELD)
+public class Operation implements Serializable{
 
-public class Operation {
-
+    @XmlAttribute
     private String name;
+    @XmlElement
     private Input input;
+    @XmlElement
     private Output output;
+    @XmlElement
     private Fault fault;
+    @XmlElement
     private SoapOperation soapOperation;
 
     public void setName(String name) {

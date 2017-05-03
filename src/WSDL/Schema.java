@@ -1,14 +1,19 @@
 package WSDL;
 
+import javax.xml.bind.annotation.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by zGuindouOS on 02/05/2017.
  */
+@XmlRootElement(name = "schema")
+@XmlAccessorType(XmlAccessType.FIELD)
+public class Schema implements Serializable{
 
-public class Schema {
-
+    @XmlAttribute
     private String targetNameSpace;
+    @XmlElement
     private ArrayList<Element> elements;
 
     public void setTargetNameSpace(String targetNameSpace) {

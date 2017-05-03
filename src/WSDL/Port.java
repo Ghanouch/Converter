@@ -1,13 +1,20 @@
 package WSDL;
 
+import javax.xml.bind.annotation.*;
+import java.io.Serializable;
+
 /**
  * Created by zGuindouOS on 02/05/2017.
  */
+@XmlRootElement(name = "wsdl:port")
+@XmlAccessorType(XmlAccessType.FIELD)
+public class Port implements Serializable{
 
-public class Port {
-
+    @XmlAttribute
     private String binding;
+    @XmlAttribute
     private String name;
+    @XmlElement
     private SoapAddress soapAddress;
 
     public void setBinding(String binding) {

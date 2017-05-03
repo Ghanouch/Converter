@@ -1,14 +1,24 @@
 package WSDL;
 
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
+
 /**
  * Created by zGuindouOS on 02/05/2017.
  */
+@XmlRootElement(name = "soap:body")
+@XmlAccessorType(XmlAccessType.FIELD)
+public class SoapBody implements Serializable{
 
-public class SoapBody {
-
+    @XmlAttribute
     private String encodingStyle;
+    @XmlAttribute
     private String nameSpace;
+    @XmlAttribute
     private String use;
 
     public SoapBody() {

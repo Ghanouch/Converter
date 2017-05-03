@@ -1,6 +1,11 @@
 package WSDL;
 
 
+import com.sun.xml.internal.txw2.annotation.XmlAttribute;
+import com.sun.xml.internal.txw2.annotation.XmlElement;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.util.Date;
@@ -10,13 +15,19 @@ import java.util.Date;
  * Created by zGuindouOS on 02/05/2017.
  */
 
-@XmlRootElement
-public class WSDL {
+@XmlRootElement(name = "wsdl:FromWADL")
+@XmlAccessorType(XmlAccessType.FIELD)
+public class WSDL implements Serializable {
 
+    @javax.xml.bind.annotation.XmlAttribute
     private int id;
+    @javax.xml.bind.annotation.XmlAttribute
     private String providerURL;
+    @javax.xml.bind.annotation.XmlAttribute
     private String clientURL;
+    @javax.xml.bind.annotation.XmlAttribute
     private String date;
+    @javax.xml.bind.annotation.XmlElement(name = "wsdl:definitions")
     private Definition definition;
 
     public void setId(int id) {

@@ -1,17 +1,25 @@
 package WSDL;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
 /**
  * Created by zGuindouOS on 02/05/2017.
  */
+@XmlRootElement(name = "element")
+@XmlAccessorType(XmlAccessType.FIELD)
+public class Element implements Serializable{
 
-public class Element {
-
+    @XmlAttribute
     private String name;
+    @XmlAttribute
     private String baseType;
+    @XmlAttribute
     private String minOccur;
+    @XmlAttribute
     private String maxOccur;
 
     public void setName(String name) {

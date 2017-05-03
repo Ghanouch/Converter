@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<wsdl>
-    <clientURL>p2</clientURL>
-    <date>p3</date>
-    <definition>
-        <binding>
-            <soapBinding/>
-        </binding>
-        <importDefinition/>
-        <portType/>
-    </definition>
-    <id>2</id>
-    <providerURL>p1</providerURL>
-</wsdl>
+<wsdl:FromWADL id="2" providerURL="p1" clientURL="p2" date="p3">
+    <wsdl:definitions name="Hello_Def" targetNameSpace="http/hello/defi">
+        <wsdl:import nameSpace="ggg/jjjj/ssd.com" location="Rabat"/>
+        <wsdl:types>
+            <schemas targetNameSpace="Hello wolrd schema"/>
+        </wsdl:types>
+        <wsdl:message name="je suis zguindou">
+            <parts name="a" type="a" element="a"/>
+            <parts name="b" type="b" element="b"/>
+            <parts name="c" type="c" element="c"/>
+            <parts name="d" type="d" element="d"/>
+        </wsdl:message>
+        <wsdl:service name="rir">
+            <ports binding="b" name="b">
+                <soapAddress location="Rabat"/>
+            </ports>
+        </wsdl:service>
+        <wsdl:binding name="zg_bind" type="prog">
+            <soapBinding style="test1" transport="test1"/>
+            <operations name="Say hello">
+                <input message="Hello">
+                    <soapBody encodingStyle="UTF" nameSpace="http://www.w3.org/1999/XSL/Transform" use="Attrebute"/>
+                </input>
+                <output message="Hi">
+                    <soapBody encodingStyle="UTF" nameSpace="http://www.w3.org/1999/XSL/Transform" use="Attrebute"/>
+                </output>
+                <fault name="zGuind">
+                    <message>I am here</message>
+                </fault>
+                <soapOperation soapAction="ENSIAS"/>
+            </operations>
+        </wsdl:binding>
+        <portType name="HTTP">
+            <operations name="Say hello">
+                <input message="Hello">
+                    <soapBody encodingStyle="UTF" nameSpace="http://www.w3.org/1999/XSL/Transform" use="Attrebute"/>
+                </input>
+                <output message="Hi">
+                    <soapBody encodingStyle="UTF" nameSpace="http://www.w3.org/1999/XSL/Transform" use="Attrebute"/>
+                </output>
+                <fault name="zGuind">
+                    <message>I am here</message>
+                </fault>
+                <soapOperation soapAction="ENSIAS"/>
+            </operations>
+        </portType>
+    </wsdl:definitions>
+</wsdl:FromWADL>
