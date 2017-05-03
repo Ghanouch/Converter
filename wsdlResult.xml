@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <wsdl>
-    <id>2</id>
-    <providerURL>p1</providerURL>
     <clientURL>p2</clientURL>
     <date>p3</date>
     <definition>
@@ -11,4 +9,6 @@
         <importDefinition/>
         <portType/>
     </definition>
+    <id>2</id>
+    <providerURL>p1</providerURL>
 </wsdl>

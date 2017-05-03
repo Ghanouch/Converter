@@ -5,17 +5,30 @@
  */
 package WADL;
 
+import javax.xml.namespace.QName;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
  *
  * @author l.IsSaM.l
  */
 public class Representation {
-    
+
+    protected List<Doc> doc;
+
+
     private MediaType mediaType;
     private String charset;
     private String element;
     private String profile;
     private String status;
+
+    protected List<Object> any;
+    private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+
+
 
     public Representation(MediaType mediaType, String charset, String element, String profile, String status) {
         this.mediaType = mediaType;
@@ -73,7 +86,43 @@ public class Representation {
     public void setStatus(String status) {
         this.status = status;
     }
-    
-    
-    
+
+    public List<Doc> getDoc() {
+        return doc;
+    }
+
+    public List<Object> getAny() {
+        return any;
+    }
+
+    public Map<QName, String> getOtherAttributes() {
+        return otherAttributes;
+    }
+
+    public void setDoc(List<Doc> doc) {
+        this.doc = doc;
+    }
+
+
+    public void setAny(List<Object> any) {
+        this.any = any;
+    }
+
+    public void setOtherAttributes(Map<QName, String> otherAttributes) {
+        this.otherAttributes = otherAttributes;
+    }
+
+    @Override
+    public String toString() {
+        return "Representation{" +
+                "doc=" + doc +
+                ", mediaType=" + mediaType +
+                ", charset='" + charset + '\'' +
+                ", element='" + element + '\'' +
+                ", profile='" + profile + '\'' +
+                ", status='" + status + '\'' +
+                ", any=" + any +
+                ", otherAttributes=" + otherAttributes +
+                '}';
+    }
 }

@@ -74,4 +74,17 @@ public class Response {
     public void setOtherAttributes(Map<QName, String> otherAttributes) {
         this.otherAttributes = otherAttributes;
     }
+
+    @Override
+    public String toString() {
+        return "Response{" +
+                "doc=" + doc +
+                ", param=" + param +
+                ", representation=" + representation +
+                ", faut=" + faut +
+                ", status=" + status +
+                ", any=" + any +
+                ", otherAttributes=" + otherAttributes +
+                '}';
+    }
 }

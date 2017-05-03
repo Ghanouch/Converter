@@ -1,3 +1,4 @@
+import WADL.WADL;
 import WSDL.WSDL;
 
 import javax.xml.bind.JAXBContext;
@@ -10,7 +11,6 @@ import java.io.File;
  */
 public class Converter {
 
-
     public static void main(String args[]) throws JAXBException {
 
         JAXBContext context = JAXBContext.newInstance(WSDL.class);
@@ -20,8 +20,5 @@ public class Converter {
         WSDL wsdl = new WSDL(2, "p1", "p2", "p3");
 
         marshaller.marshal(wsdl, new File("wsdlResult.xml"));
-
-
     }
-
 }

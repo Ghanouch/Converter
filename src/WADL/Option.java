@@ -40,5 +40,11 @@ public class Option {
         otherAttributes.put(key,val);
     }
 
-
+    @Override
+    public String toString() {
+        return "Option{" +
+                "value='" + value + '\'' +
+                ", otherAttributes=" + otherAttributes +
+                '}';
+    }
 }

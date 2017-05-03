@@ -151,4 +151,25 @@ public class Param {
     public void setAny(List<Object> any) {
         this.any = any;
     }
+
+    @Override
+    public String toString() {
+        return "Param{" +
+                "doc=" + doc +
+                ", option=" + option +
+                ", link=" + link +
+                ", style=" + style +
+                ", href='" + href + '\'' +
+                ", name='" + name + '\'' +
+                ", id='" + id + '\'' +
+                ", type=" + type +
+                ", _default='" + _default + '\'' +
+                ", required=" + required +
+                ", repeating=" + repeating +
+                ", fixed='" + fixed + '\'' +
+                ", path='" + path + '\'' +
+                ", otherAttributes=" + otherAttributes +
+                ", any=" + any +
+                '}';
+    }
 }

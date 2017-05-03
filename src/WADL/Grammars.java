@@ -16,6 +16,9 @@ public class Grammars {
     
     List<Include> listOfIncludes = new ArrayList<>();
 
+    protected List<Doc> doc;
+    protected List<Object> any;
+
     public Grammars(List<Include> listOfIncludes) {
         this.listOfIncludes = listOfIncludes;
     }
@@ -32,5 +35,31 @@ public class Grammars {
     {
         
     }
-    
+
+    public List<Doc> getDoc() {
+        return doc;
+    }
+
+    public List<Object> getAny() {
+        return any;
+    }
+
+
+
+    public void setDoc(List<Doc> doc) {
+        this.doc = doc;
+    }
+
+    public void setAny(List<Object> any) {
+        this.any = any;
+    }
+
+    @Override
+    public String toString() {
+        return "Grammars{" +
+                "listOfIncludes=" + listOfIncludes +
+                ", doc=" + doc +
+                ", any=" + any +
+                '}';
+    }
 }

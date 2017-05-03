@@ -68,4 +68,15 @@ public class Ressources {
     public void setOtherAttributes(Map<QName, String> otherAttributes) {
         this.otherAttributes = otherAttributes;
     }
+
+    @Override
+    public String toString() {
+        return "Ressources{" +
+                "doc=" + doc +
+                ", resources=" + resources +
+                ", base='" + base + '\'' +
+                ", any=" + any +
+                ", otherAttributes=" + otherAttributes +
+                '}';
+    }
 }

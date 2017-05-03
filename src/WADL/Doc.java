@@ -76,4 +76,15 @@ public class Doc {
     public Map<QName, String> getOtherAttributes() {
         return otherAttributes;
     }
+
+    @Override
+    public String toString() {
+        return "Doc{" +
+                "lang='" + lang + '\'' +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", contents=" + contents +
+                ", otherAttributes=" + otherAttributes +
+                '}';
+    }
 }

@@ -1,17 +1,17 @@
 package WSDL;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
+
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
+import java.util.Date;
+
 
 /**
  * Created by zGuindouOS on 02/05/2017.
  */
 
-@XmlRootElement(name = "wsdl")
-@XmlAccessorType(XmlAccessType.FIELD)
-public class WSDL implements Serializable{
+@XmlRootElement
+public class WSDL {
 
     private int id;
     private String providerURL;
