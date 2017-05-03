@@ -61,4 +61,15 @@ public class Application {
     public void setListOfNamesSpaces(Map<String, String> listOfNamesSpaces) {
         this.listOfNamesSpaces = listOfNamesSpaces;
     }
+
+    @Override
+    public String toString() {
+        return "Application{" +
+                "doc=" + doc +
+                ", resources=" + resources +
+                ", grammars=" + grammars +
+                ", any=" + any +
+                ", listOfNamesSpaces=" + listOfNamesSpaces +
+                '}';
+    }
 }
