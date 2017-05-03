@@ -1,10 +1,13 @@
 package WSDL;
 
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by zGuindouOS on 02/05/2017.
  */
+
 public class Binding {
 
     private String name;

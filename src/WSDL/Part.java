@@ -1,8 +1,11 @@
 package WSDL;
 
+
 /**
  * Created by zGuindouOS on 02/05/2017.
  */
+
+
 public class Part {
     private String name;
     private String type;

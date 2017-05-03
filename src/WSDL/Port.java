@@ -3,6 +3,7 @@ package WSDL;
 /**
  * Created by zGuindouOS on 02/05/2017.
  */
+
 public class Port {
 
     private String binding;

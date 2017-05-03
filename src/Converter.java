@@ -19,7 +19,7 @@ public class Converter {
 
         WSDL wsdl = new WSDL(1, "/c/test.net", "/c/client.c", "10/11/1999");
 
-        marshaller.marshal(wsdl, new File("mywsdltest.xml"));
+        marshaller.marshal(wsdl, new File("wsdlResult.xml"));
 
 
 
