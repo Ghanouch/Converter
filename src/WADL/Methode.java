@@ -16,18 +16,15 @@ public class Methode {
     protected List<Request> requests;
 
     protected String id;
-    protected NameMethode name;
+    protected HTTPMethods name;
 
-    private enum  NameMethode
-    {
-        GET , POST , PUT , DELETE;
-    }
+
 
     protected List<Object> any;
     private Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 
-    public Methode(String id, NameMethode name) {
+    public Methode(String id, HTTPMethods name) {
         this.id = id;
         this.name = name;
     }
@@ -83,11 +80,11 @@ public class Methode {
         this.otherAttributes = otherAttributes;
     }
 
-    public NameMethode getName() {
+    public HTTPMethods getName() {
         return name;
     }
 
-    public void setName(NameMethode name) {
+    public void setName(HTTPMethods name) {
         this.name = name;
     }
 }
