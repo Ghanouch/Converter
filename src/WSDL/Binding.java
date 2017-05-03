@@ -7,37 +7,6 @@ import java.util.ArrayList;
  */
 public class Binding {
 
-    public static class SoapBinding {
-
-        private String style;
-        private String transport;
-
-        public void setStyle(String style) {
-            this.style = style;
-        }
-
-        public void setTransport(String transport) {
-            this.transport = transport;
-        }
-
-        public String getStyle() {
-            return style;
-        }
-
-        public String getTransport() {
-            return transport;
-        }
-
-        public SoapBinding() {
-
-        }
-
-        public SoapBinding(String style, String transport) {
-            this.style = style;
-            this.transport = transport;
-        }
-    }
-
     private String name;
     private String type;
     private SoapBinding soapBinding;
