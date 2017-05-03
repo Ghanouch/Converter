@@ -1,0 +1,16 @@
+<application>
+<grammars>
+<include href="application.wadl/xsd0.xsd">
+<doc title="Generated" lang="en"/>
+</include>
+</grammars>
+<resources base="http://localhost:8084/RESTWS/">
+<resource path="/categories">
+<method id="consulterCategories" name="GET">
+<response>
+<representation mediaType="application/json"/>
+</response>
+</method>
+</resource>
+</resources>
+</application>
