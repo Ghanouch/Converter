@@ -111,4 +111,18 @@ public class Representation {
     public void setOtherAttributes(Map<QName, String> otherAttributes) {
         this.otherAttributes = otherAttributes;
     }
+
+    @Override
+    public String toString() {
+        return "Representation{" +
+                "doc=" + doc +
+                ", mediaType=" + mediaType +
+                ", charset='" + charset + '\'' +
+                ", element='" + element + '\'' +
+                ", profile='" + profile + '\'' +
+                ", status='" + status + '\'' +
+                ", any=" + any +
+                ", otherAttributes=" + otherAttributes +
+                '}';
+    }
 }

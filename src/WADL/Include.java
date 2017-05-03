@@ -68,5 +68,14 @@ public class Include {
     public void addDoc(Doc doc){
         listOfDocs.add(doc);
     }
-    
+
+
+    @Override
+    public String toString() {
+        return "Include{" +
+                "href='" + href + '\'' +
+                ", listOfDocs=" + listOfDocs +
+                ", otherAttributes=" + otherAttributes +
+                '}';
+    }
 }

@@ -75,4 +75,15 @@ public class Link
         this.otherAttributes = otherAttributes;
     }
 
+    @Override
+    public String toString() {
+        return "Link{" +
+                "doc=" + doc +
+                ", resourceType='" + resourceType + '\'' +
+                ", rel='" + rel + '\'' +
+                ", rev='" + rev + '\'' +
+                ", any=" + any +
+                ", otherAttributes=" + otherAttributes +
+                '}';
+    }
 }

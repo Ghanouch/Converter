@@ -87,4 +87,17 @@ public class Methode {
     public void setName(HTTPMethods name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Methode{" +
+                "doc=" + doc +
+                ", response=" + response +
+                ", requests=" + requests +
+                ", id='" + id + '\'' +
+                ", name=" + name +
+                ", any=" + any +
+                ", otherAttributes=" + otherAttributes +
+                '}';
+    }
 }

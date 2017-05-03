@@ -77,5 +77,14 @@ public class Doc {
         return otherAttributes;
     }
 
-
+    @Override
+    public String toString() {
+        return "Doc{" +
+                "lang='" + lang + '\'' +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", contents=" + contents +
+                ", otherAttributes=" + otherAttributes +
+                '}';
+    }
 }

@@ -57,4 +57,15 @@ public class Request {
     public void setOtherAttributes(Map<QName, String> otherAttributes) {
         this.otherAttributes = otherAttributes;
     }
+
+    @Override
+    public String toString() {
+        return "Request{" +
+                "doc=" + doc +
+                ", param=" + param +
+                ", representation=" + representation +
+                ", any=" + any +
+                ", otherAttributes=" + otherAttributes +
+                '}';
+    }
 }

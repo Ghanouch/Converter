@@ -1,6 +1,7 @@
 package WSDL;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.Date;
 
 /**
  * Created by zGuindouOS on 02/05/2017.
@@ -12,7 +13,7 @@ public class WSDL {
     private int id;
     private String providerURL;
     private String clientURL;
-    private String date;
+    private Date date;
     private Definition definition;
 
     public void setId(int id) {
@@ -27,7 +28,7 @@ public class WSDL {
         this.clientURL = clientURL;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
@@ -47,7 +48,7 @@ public class WSDL {
         return clientURL;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
@@ -59,7 +60,7 @@ public class WSDL {
 
     }
 
-    public WSDL(int id, String providerURL, String clientURL, String date) {
+    public WSDL(int id, String providerURL, String clientURL, Date date) {
         this.id = id;
         this.providerURL = providerURL;
         this.clientURL = clientURL;
@@ -67,7 +68,7 @@ public class WSDL {
         //this.definition = new Definition();
     }
 
-    public WSDL(int id, String providerURL, String clientURL, String date, Definition definition) {
+    public WSDL(int id, String providerURL, String clientURL, Date date, Definition definition) {
         this.id = id;
         this.providerURL = providerURL;
         this.clientURL = clientURL;

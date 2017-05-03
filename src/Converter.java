@@ -1,3 +1,4 @@
+import WADL.WADL;
 import WSDL.WSDL;
 
 /**
@@ -6,9 +7,11 @@ import WSDL.WSDL;
 public class Converter {
 
 
-    public static void main(String args[]) {
+    public static void main(String args[])
+    {
 
         WSDL wsdl = new WSDL();
+        WADL wadl = new WADL();
 
         System.out.print("Hello world");
 

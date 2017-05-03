@@ -53,4 +53,13 @@ public class Grammars {
     public void setAny(List<Object> any) {
         this.any = any;
     }
+
+    @Override
+    public String toString() {
+        return "Grammars{" +
+                "listOfIncludes=" + listOfIncludes +
+                ", doc=" + doc +
+                ", any=" + any +
+                '}';
+    }
 }

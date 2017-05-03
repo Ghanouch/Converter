@@ -66,4 +66,15 @@ public class WADL {
     public Definition getDefinition() {
         return definition;
     }
+
+    @Override
+    public String toString() {
+        return "WADL{" +
+                "id=" + id +
+                ", providerURL='" + providerURL + '\'' +
+                ", clientURL='" + clientURL + '\'' +
+                ", date=" + date +
+                ", definition=" + definition +
+                '}';
+    }
 }
