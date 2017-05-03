@@ -15,7 +15,7 @@ public class Definition {
     private String targetNameSpace;
     private ArrayList<Message> messages;
     private ArrayList<Service> services;
-    private Prototype prototype;
+    private PortType portType;
     private Binding binding;
     private Import importDefinition;
     private Types types;
@@ -36,8 +36,8 @@ public class Definition {
         this.services = services;
     }
 
-    public void setPrototype(Prototype prototype) {
-        this.prototype = prototype;
+    public void setPortType(PortType portType) {
+        this.portType = portType;
     }
 
     public void setBinding(Binding binding) {
@@ -66,8 +66,8 @@ public class Definition {
         return services;
     }
 
-    public Prototype getPrototype() {
-        return prototype;
+    public PortType getPortType() {
+        return portType;
     }
 
     public Binding getBinding() {
@@ -84,7 +84,7 @@ public class Definition {
     public Definition() {
         messages        = new ArrayList<Message>();
         services        = new ArrayList<Service>();
-        prototype       = new Prototype();
+        portType        = new PortType();
         binding         = new Binding();
         importDefinition= new Import();
     }
@@ -94,28 +94,28 @@ public class Definition {
         this.targetNameSpace = targetNameSpace;
         messages        = new ArrayList<Message>();
         services        = new ArrayList<Service>();
-        prototype       = new Prototype();
+        portType       = new PortType();
         binding         = new Binding();
         importDefinition= new Import();
     }
 
-    public Definition(String name, String targetNameSpace, ArrayList<Message> messages, ArrayList<Service> services, Prototype prototype, Binding binding, Import importDefinition) {
+    public Definition(String name, String targetNameSpace, ArrayList<Message> messages, ArrayList<Service> services, PortType portType, Binding binding, Import importDefinition) {
         this.name = name;
         this.targetNameSpace = targetNameSpace;
         this.messages = messages;
         this.services = services;
-        this.prototype = prototype;
-        this.binding = binding;
+        this.portType = portType;
+        this.binding  = binding;
         this.importDefinition = importDefinition;
     }
 
-    public Definition(String name, String targetNameSpace, ArrayList<Message> messages, ArrayList<Service> services, Prototype prototype, Binding binding, Import importDefinition, Types types) {
+    public Definition(String name, String targetNameSpace, ArrayList<Message> messages, ArrayList<Service> services, PortType portType, Binding binding, Import importDefinition, Types types) {
         this.name = name;
         this.targetNameSpace = targetNameSpace;
         this.messages = messages;
         this.services = services;
-        this.prototype = prototype;
-        this.binding = binding;
+        this.portType = portType;
+        this.binding  = binding;
         this.importDefinition = importDefinition;
         this.types = types;
     }

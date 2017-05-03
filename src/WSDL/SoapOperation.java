@@ -6,6 +6,7 @@ package WSDL;
  */
 
 public class SoapOperation {
+
     private String soapAction;
 
     public SoapOperation(String soapAction) {
@@ -14,6 +15,10 @@ public class SoapOperation {
 
     public String getSoapAction() {
         return soapAction;
+    }
+
+    public SoapOperation() {
+
     }
 
     public void setSoapAction(String soapAction) {

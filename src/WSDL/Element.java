@@ -51,7 +51,7 @@ public class Element {
     }
 
     public Element(String name, String baseType, String minOccur, String maxOccur) {
-        this.name = name;
+        this.name     = name;
         this.baseType = baseType;
         this.minOccur = minOccur;
         this.maxOccur = maxOccur;

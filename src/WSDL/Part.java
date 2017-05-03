@@ -7,8 +7,10 @@ package WSDL;
 
 
 public class Part {
+
     private String name;
     private String type;
+    private String element;
 
     public void setName(String name) {
         this.name = name;
@@ -16,6 +18,10 @@ public class Part {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public void setElement(String element) {
+        this.element = element;
     }
 
     public String getName() {
@@ -26,8 +32,17 @@ public class Part {
         return type;
     }
 
-    public Part(String name, String type) {
+    public String getElement() {
+        return element;
+    }
+
+    public Part() {
+
+    }
+
+    public Part(String name, String type, String element) {
         this.name = name;
         this.type = type;
+        this.element = element;
     }
 }

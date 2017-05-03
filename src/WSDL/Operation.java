@@ -56,7 +56,6 @@ public class Operation {
 
     public Operation() {
 
-
     }
 
     public Operation(String name, Input input, Output output, Fault fault, SoapOperation soapOperation) {

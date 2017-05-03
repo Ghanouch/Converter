@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <wsdl>
-    <id>1</id>
-    <providerURL>/c/test.net</providerURL>
-    <clientURL>/c/client.c</clientURL>
-    <date>10/11/1999</date>
+    <id>2</id>
+    <providerURL>p1</providerURL>
+    <clientURL>p2</clientURL>
+    <date>p3</date>
     <definition>
         <binding>
             <soapBinding/>
         </binding>
         <importDefinition/>
-        <prototype/>
+        <portType/>
     </definition>
 </wsdl>
