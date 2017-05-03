@@ -8,24 +8,24 @@ import java.util.Map;
 /**
  * Created by l.IsSaM.l on 03/05/2017.
  */
-public class Ressources {
+public class Resources {
 
     protected List<Doc> doc;
-    protected List<Ressource> resources;
+    protected List<Resource> resources;
 
     protected String base;
 
     protected List<Object> any;
     private Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
-    public Ressources() {
+    public Resources() {
     }
 
-    public Ressources(String base) {
+    public Resources(String base) {
         this.base = base;
     }
 
-    public Ressources(List<Ressource> resources) {
+    public Resources(List<Resource> resources) {
         this.resources = resources;
     }
 
@@ -33,7 +33,7 @@ public class Ressources {
         return doc;
     }
 
-    public List<Ressource> getResources() {
+    public List<Resource> getResources() {
         return resources;
     }
 
@@ -53,7 +53,7 @@ public class Ressources {
         this.doc = doc;
     }
 
-    public void setResources(List<Ressource> resources) {
+    public void setResources(List<Resource> resources) {
         this.resources = resources;
     }
 
@@ -71,7 +71,7 @@ public class Ressources {
 
     @Override
     public String toString() {
-        return "Ressources{" +
+        return "Resources{" +
                 "doc=" + doc +
                 ", resources=" + resources +
                 ", base='" + base + '\'' +

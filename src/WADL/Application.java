@@ -10,7 +10,7 @@ import java.util.Map;
 public class Application {
 
     protected List<Doc> doc;
-    protected List<Ressources> resources;
+    protected List<Resources> resources;
 
     protected Grammars grammars;
 
@@ -26,7 +26,7 @@ public class Application {
         return doc;
     }
 
-    public List<Ressources> getResources() {
+    public List<Resources> getResources() {
         return resources;
     }
 
@@ -38,7 +38,7 @@ public class Application {
         this.doc = doc;
     }
 
-    public void setResources(List<Ressources> resources) {
+    public void setResources(List<Resources> resources) {
         this.resources = resources;
     }
 

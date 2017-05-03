@@ -19,7 +19,8 @@ public enum MediaType {
     AppSTREAM("application/octet-stream"),
     MultfORM("multipart/form-data"),
     TextPLAIN("text/plain"),
-    TextXML("text/xml");
+    TextXML("text/xml"),
+    Other ("other");
     
     
    private String name = "";

@@ -8,12 +8,12 @@ import java.util.Map;
 /**
  * Created by l.IsSaM.l on 03/05/2017.
  */
-public class Ressource {
+public class Resource {
 
     protected List<Doc> doc;
     protected List<Param> param;
 
-    protected List<Ressource> resource;
+    protected List<Resource> resource;
 
     protected String id;
     protected List<String> type;
@@ -24,10 +24,10 @@ public class Ressource {
     protected List<Object> any;
     private Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
-    public Ressource() {
+    public Resource() {
     }
 
-    public Ressource(String path) {
+    public Resource(String path) {
         this.path = path;
     }
 
@@ -39,7 +39,7 @@ public class Ressource {
         return param;
     }
 
-    public List<Ressource> getResource() {
+    public List<Resource> getResource() {
         return resource;
     }
 
@@ -75,7 +75,7 @@ public class Ressource {
         this.param = param;
     }
 
-    public void setResource(List<Ressource> resource) {
+    public void setResource(List<Resource> resource) {
         this.resource = resource;
     }
 
@@ -105,7 +105,7 @@ public class Ressource {
 
     @Override
     public String toString() {
-        return "Ressource{" +
+        return "Resource{" +
                 "doc=" + doc +
                 ", param=" + param +
                 ", resource=" + resource +

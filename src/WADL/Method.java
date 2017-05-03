@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * Created by l.IsSaM.l on 03/05/2017.
  */
-public class Methode {
+public class Method {
 
     protected List<Doc> doc;
     protected List<Response> response;
@@ -24,12 +24,12 @@ public class Methode {
     private Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
 
-    public Methode(String id, HTTPMethods name) {
+    public Method(String id, HTTPMethods name) {
         this.id = id;
         this.name = name;
     }
 
-    public Methode() {
+    public Method() {
     }
 
     public List<Doc> getDoc() {
@@ -90,7 +90,7 @@ public class Methode {
 
     @Override
     public String toString() {
-        return "Methode{" +
+        return "Method{" +
                 "doc=" + doc +
                 ", response=" + response +
                 ", requests=" + requests +
