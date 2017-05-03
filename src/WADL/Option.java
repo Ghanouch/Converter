@@ -9,7 +9,7 @@ import java.util.Map;
 public class Option {
 
     private String value;
-    private Map<String, String> otherAttributes = new HashMap<QName, String>();
+    private Map<String, String> otherAttributes = new HashMap<String, String>();
 
 
     public Option(String value) {
