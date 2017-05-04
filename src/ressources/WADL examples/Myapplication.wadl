@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application>
+<application xmlns="http://wadl.dev.java.net/2009/02">
 <doc xmlns:jersey="http://jersey.java.net/" jersey:generatedBy="Jersey: 1.19.3 10/24/2016 03:43 PM"/>
 <grammars>
 <include href="application.wadl/xsd0.xsd">

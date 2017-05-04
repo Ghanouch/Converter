@@ -6,6 +6,9 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamReader;
+import javax.xml.stream.util.StreamReaderDelegate;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
@@ -14,6 +17,22 @@ import java.io.InputStreamReader;
  * Created by l.IsSaM.l on 03/05/2017.
  */
 public class XmlToObject {
+
+    private static final String nameFile = "wadl4";
+
+    private static class XsiTypeReader extends StreamReaderDelegate
+    {
+        public XsiTypeReader(XMLStreamReader reader) {
+            super(reader);
+        }
+        @Override
+        public String getNamespaceURI() {
+            return "";
+        }
+
+
+    }
+
 
     public static String getPathFrom(String nameFile)
     {
@@ -45,11 +64,16 @@ public class XmlToObject {
     {
         try
         {
+            // Pour igoner la  balise de name space xmlns
+            XMLInputFactory xif = XMLInputFactory.newFactory();
+            XMLStreamReader xsr = xif.createXMLStreamReader(new FileInputStream(getPathFrom(nameFile+".wadl")));
+            xsr = new XsiTypeReader(xsr);
 
-            // Convert From WADL To Object
+            // Unmarshall Xml --> Object
             JAXBContext jc = JAXBContext.newInstance(Application.class);
             Unmarshaller unmarshaller = jc.createUnmarshaller();
-            Application app = (Application) unmarshaller.unmarshal(new File(getPathFrom(nameFile)));
+            Application app = (Application) unmarshaller.unmarshal(xsr);
+
             return app;
         }
         catch (Exception e)
@@ -87,7 +111,7 @@ public class XmlToObject {
         try
         {
             System.out.println("Convert from File To Object ...");
-            application = getObjectFromWADL("Myapplication.wadl");
+            application = getObjectFromWADL(nameFile);
         }catch(Exception e)
         {
             System.out.println("Error ETAPE 1 : " +e.getMessage());
@@ -98,6 +122,7 @@ public class XmlToObject {
 
         // --------------------------------------      Modify Wadl Object       --------------------------------------//
 
+
         try
         {
             System.out.println("Modification ...");
@@ -105,7 +130,7 @@ public class XmlToObject {
             application.getGrammars().getInclude().get(0).getDoc().get(0).setLang("fr");
             application.getGrammars().getInclude().get(0).getDoc().get(0).setTitle("Issam");
             Resource res = (Resource) application.getResources().get(0).getResource().get(0).getMethodOrResource().get(0);
-            res.setPath("Je peux faire ce que je veux");
+            res.setPath("Issam  peut faire ce que je veux");
         }catch(Exception e)
         {
             System.out.println("Error ETAPE 2 : " +e.getCause());
@@ -117,7 +142,8 @@ public class XmlToObject {
         try
         {
             System.out.println("Convert From Object To File");
-            ConvertWADLObjectToXML(application, "newFile");
+            ConvertWADLObjectToXML(application, nameFile);
+
 
 
             System.out.println(" - -  Succes Mission !! - - ");
@@ -132,6 +158,8 @@ public class XmlToObject {
 
 
     }
+
+
 
 
 }

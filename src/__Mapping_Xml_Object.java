@@ -3,6 +3,12 @@ import WADL.Doc;
 import WADL.Param;
 import WADL.Resource;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Unmarshaller;
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamReader;
+import javax.xml.stream.util.StreamReaderDelegate;
+import java.io.FileInputStream;
 import java.util.List;
 
 /**
@@ -13,15 +19,18 @@ public class __Mapping_Xml_Object {
 
 
 
-    public static void main(String[] str)
-    {
+    public static void main(String[] str) throws Exception {
         try {
 
             //readFile("Myapplication.wadl");
 
             //-------------------------------------- Convert From File WADL to Object --------------------------------------//
+
             Application application = XmlToObject.getObjectFromWADL("Myapplication.wadl");
+
+
             //System.out.println(application);
+
 
             System.out.println("-------------- DOCUMENTATION Application--------------");
             Doc doc = application.getDoc().get(0);
@@ -49,14 +58,11 @@ public class __Mapping_Xml_Object {
 
 
             System.out.println(" - -  Succes Mission !! - - ");
-        }catch(Exception e)
-        {
-            System.out.println("+++++++++++++" +e.getMessage());
+
+        } catch (Exception e) {
+            System.out.println("Eroor");
+            System.out.println("+++++++++++++" + e.getMessage());
         }
-
-
-
-
 
 
     }
