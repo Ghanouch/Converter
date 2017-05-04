@@ -1,81 +1,202 @@
-package WADL;
+package WADL;//
+// Ce fichier a �t� g�n�r� par l'impl�mentation de r�f�rence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
+// Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Toute modification apport�e � ce fichier sera perdue lors de la recompilation du sch�ma source. 
+// G�n�r� le : 2017.05.03 � 01:42:31 AM WEST 
+//
 
+
+import org.w3c.dom.Element;
+
+import javax.xml.bind.annotation.*;
 import javax.xml.namespace.QName;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
 /**
- * Created by l.IsSaM.l on 03/05/2017.
+ * <p>Classe Java pour anonymous complex type.
+ * 
+ * <p>Le fragment de sch�ma suivant indique le contenu attendu figurant dans cette classe.
+ * 
+ * <pre>
+ * &lt;complexType>
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element ref="{http://wadl.dev.java.net/2009/02}doc" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://wadl.dev.java.net/2009/02}resource" maxOccurs="unbounded"/>
+ *         &lt;any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
+ *       &lt;/sequence>
+ *       &lt;attribute name="base" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+ *       &lt;anyAttribute processContents='lax' namespace='##other'/>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
  */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "", propOrder = {
+    "doc",
+    "resource",
+    "any"
+})
+@XmlRootElement(name = "resources")
 public class Resources {
 
     protected List<Doc> doc;
-    protected List<Resource> resources;
-
-    protected String base;
-
+    @XmlElement(required = true)
+    protected List<Resource> resource;
+    @XmlAnyElement(lax = true)
     protected List<Object> any;
+    @XmlAttribute(name = "base")
+    @XmlSchemaType(name = "anyURI")
+    protected String base;
+    @XmlAnyAttribute
     private Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
-    public Resources() {
-    }
-
-    public Resources(String base) {
-        this.base = base;
-    }
-
-    public Resources(List<Resource> resources) {
-        this.resources = resources;
-    }
-
+    /**
+     * Gets the value of the doc property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the doc property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getDoc().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Doc }
+     * 
+     * 
+     */
     public List<Doc> getDoc() {
-        return doc;
+        if (doc == null) {
+            doc = new ArrayList<Doc>();
+        }
+        return this.doc;
     }
 
-    public List<Resource> getResources() {
-        return resources;
+    /**
+     * Gets the value of the resource property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the resource property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getResource().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Resource }
+     * 
+     * 
+     */
+    public List<Resource> getResource() {
+        if (resource == null) {
+            resource = new ArrayList<Resource>();
+        }
+        return this.resource;
     }
 
+    /**
+     * Gets the value of the any property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the any property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getAny().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Object }
+     * {@link Element }
+     * 
+     * 
+     */
+    public List<Object> getAny() {
+        if (any == null) {
+            any = new ArrayList<Object>();
+        }
+        return this.any;
+    }
+
+    /**
+     * Obtient la valeur de la propri�t� base.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
     public String getBase() {
         return base;
     }
 
-    public List<Object> getAny() {
-        return any;
+    /**
+     * D�finit la valeur de la propri�t� base.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setBase(String value) {
+        this.base = value;
     }
 
+    /**
+     * Gets a map that contains attributes that aren't bound to any typed property on this class.
+     * 
+     * <p>
+     * the map is keyed by the name of the attribute and 
+     * the value is the string value of the attribute.
+     * 
+     * the map returned by this method is live, and you can add new attribute
+     * by updating the map directly. Because of this design, there's no setter.
+     * 
+     * 
+     * @return
+     *     always non-null
+     */
     public Map<QName, String> getOtherAttributes() {
         return otherAttributes;
     }
 
-    public void setDoc(List<Doc> doc) {
-        this.doc = doc;
-    }
-
-    public void setResources(List<Resource> resources) {
-        this.resources = resources;
-    }
-
-    public void setBase(String base) {
-        this.base = base;
-    }
-
-    public void setAny(List<Object> any) {
-        this.any = any;
-    }
-
-    public void setOtherAttributes(Map<QName, String> otherAttributes) {
-        this.otherAttributes = otherAttributes;
-    }
 
     @Override
     public String toString() {
-        return "Resources{" +
+        return "\n Resources{" +
                 "doc=" + doc +
-                ", resources=" + resources +
-                ", base='" + base + '\'' +
+                ", resource=" + resource +
                 ", any=" + any +
+                ", base='" + base + '\'' +
                 ", otherAttributes=" + otherAttributes +
                 '}';
     }

@@ -1,4 +1,4 @@
-package WADL;
+package WADL_;
 
 import WSDL.Definition;
 
@@ -69,7 +69,7 @@ public class WADL {
 
     @Override
     public String toString() {
-        return "WADL{" +
+        return "WADL_{" +
                 "id=" + id +
                 ", providerURL='" + providerURL + '\'' +
                 ", clientURL='" + clientURL + '\'' +
