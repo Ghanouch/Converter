@@ -1,12 +1,12 @@
 //
-// Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
+// Ce fichier a ï¿½tï¿½ gï¿½nï¿½rï¿½ par l'implï¿½mentation de rï¿½fï¿½rence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2017.05.03 à 01:46:17 AM WEST 
+// Toute modification apportï¿½e ï¿½ ce fichier sera perdue lors de la recompilation du schï¿½ma source. 
+// Gï¿½nï¿½rï¿½ le : 2017.05.03 ï¿½ 01:46:17 AM WEST 
 //
 
 
-package org.xmlsoap.schemas.wsdl;
+package WSDL;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -21,7 +21,7 @@ import javax.xml.namespace.QName;
 /**
  * <p>Classe Java pour tPart complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>Le fragment de schï¿½ma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="tPart">
@@ -54,7 +54,7 @@ public class TPart
     protected QName type;
 
     /**
-     * Obtient la valeur de la propriété name.
+     * Obtient la valeur de la propriï¿½tï¿½ name.
      * 
      * @return
      *     possible object is
@@ -66,7 +66,7 @@ public class TPart
     }
 
     /**
-     * Définit la valeur de la propriété name.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ name.
      * 
      * @param value
      *     allowed object is
@@ -78,7 +78,7 @@ public class TPart
     }
 
     /**
-     * Obtient la valeur de la propriété element.
+     * Obtient la valeur de la propriï¿½tï¿½ element.
      * 
      * @return
      *     possible object is
@@ -90,7 +90,7 @@ public class TPart
     }
 
     /**
-     * Définit la valeur de la propriété element.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ element.
      * 
      * @param value
      *     allowed object is
@@ -102,7 +102,7 @@ public class TPart
     }
 
     /**
-     * Obtient la valeur de la propriété type.
+     * Obtient la valeur de la propriï¿½tï¿½ type.
      * 
      * @return
      *     possible object is
@@ -114,7 +114,7 @@ public class TPart
     }
 
     /**
-     * Définit la valeur de la propriété type.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ type.
      * 
      * @param value
      *     allowed object is

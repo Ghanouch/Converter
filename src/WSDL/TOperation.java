@@ -1,12 +1,12 @@
 //
-// Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
+// Ce fichier a ï¿½tï¿½ gï¿½nï¿½rï¿½ par l'implï¿½mentation de rï¿½fï¿½rence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2017.05.03 à 01:46:17 AM WEST 
+// Toute modification apportï¿½e ï¿½ ce fichier sera perdue lors de la recompilation du schï¿½ma source. 
+// Gï¿½nï¿½rï¿½ le : 2017.05.03 ï¿½ 01:46:17 AM WEST 
 //
 
 
-package org.xmlsoap.schemas.wsdl;
+package WSDL;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 /**
  * <p>Classe Java pour tOperation complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>Le fragment de schï¿½ma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="tOperation">
@@ -69,16 +69,16 @@ public class TOperation
     protected List<String> parameterOrder;
 
     /**
-     * Obtient le reste du modèle de contenu. 
+     * Obtient le reste du modï¿½le de contenu. 
      * 
      * <p>
-     * Vous obtenez la propriété "catch-all" pour la raison suivante : 
-     * Le nom de champ "Output" est utilisé par deux parties différentes d'un schéma. Reportez-vous à : 
+     * Vous obtenez la propriï¿½tï¿½ "catch-all" pour la raison suivante : 
+     * Le nom de champ "Output" est utilisï¿½ par deux parties diffï¿½rentes d'un schï¿½ma. Reportez-vous ï¿½ : 
      * ligne 217 sur file:/C:/Users/l.IsSaM.l/Documents/GitHub/PFA%20convertor/GENERATION%20Avec%20JAXB/WSDL/WSDL.xsd
      * ligne 209 sur file:/C:/Users/l.IsSaM.l/Documents/GitHub/PFA%20convertor/GENERATION%20Avec%20JAXB/WSDL/WSDL.xsd
      * <p>
-     * Pour vous débarrasser de cette propriété, appliquez une personnalisation de propriété à l'une 
-     * des deux déclarations suivantes afin de modifier leurs noms : 
+     * Pour vous dï¿½barrasser de cette propriï¿½tï¿½, appliquez une personnalisation de propriï¿½tï¿½ ï¿½ l'une 
+     * des deux dï¿½clarations suivantes afin de modifier leurs noms : 
      * Gets the value of the rest property.
      * 
      * <p>
@@ -110,7 +110,7 @@ public class TOperation
     }
 
     /**
-     * Obtient la valeur de la propriété name.
+     * Obtient la valeur de la propriï¿½tï¿½ name.
      * 
      * @return
      *     possible object is
@@ -122,7 +122,7 @@ public class TOperation
     }
 
     /**
-     * Définit la valeur de la propriété name.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ name.
      * 
      * @param value
      *     allowed object is
