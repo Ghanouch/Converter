@@ -1,13 +1,20 @@
 package WSDL;
 
+
+import javax.xml.bind.annotation.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by zGuindouOS on 02/05/2017.
  */
-public class Message {
+@XmlRootElement(name = "wsdl:message")
+@XmlAccessorType(XmlAccessType.FIELD)
+public class Message implements Serializable{
 
+    @XmlAttribute
     private String name;
+    @XmlElement
     private ArrayList<Part> parts;
 
     public void setName(String name) {

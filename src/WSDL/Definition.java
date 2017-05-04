@@ -1,20 +1,33 @@
 package WSDL;
 
+import javax.xml.bind.annotation.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by zGuindouOS on 02/05/2017.
  */
-public class Definition {
 
+@XmlRootElement(name = "wsdl:definitions")
+@XmlAccessorType(XmlAccessType.FIELD)
+public class Definition implements Serializable{
+
+    @XmlAttribute(name = "name")
     private String name;
+    @XmlAttribute(name = "targetNameSpace")
     private String targetNameSpace;
-    private ArrayList<Message> messages;
-    private ArrayList<Service> services;
-    private Prototype prototype;
-    private Binding binding;
+    @XmlElement(name = "wsdl:import")
     private Import importDefinition;
+    @XmlElement(name = "wsdl:types")
     private Types types;
+    @XmlElement(name = "wsdl:message")
+    private ArrayList<Message> messages;
+    @XmlElement(name = "wsdl:service")
+    private ArrayList<Service> services;
+    @XmlElement(name = "wsdl:binding")
+    private ArrayList<Binding> bindings;
+    @XmlElement(name = "portType")
+    private PortType portType;
 
     public void setName(String name) {
         this.name = name;
@@ -32,12 +45,12 @@ public class Definition {
         this.services = services;
     }
 
-    public void setPrototype(Prototype prototype) {
-        this.prototype = prototype;
+    public void setBindings(ArrayList<Binding> bindings) {
+        this.bindings = bindings;
     }
 
-    public void setBinding(Binding binding) {
-        this.binding = binding;
+    public void setPortType(PortType portType) {
+        this.portType = portType;
     }
 
     public void setImportDefinition(Import importDefinition) {
@@ -62,12 +75,12 @@ public class Definition {
         return services;
     }
 
-    public Prototype getPrototype() {
-        return prototype;
+    public ArrayList<Binding> getBindings() {
+        return bindings;
     }
 
-    public Binding getBinding() {
-        return binding;
+    public PortType getPortType() {
+        return portType;
     }
 
     public Import getImportDefinition() {
@@ -80,8 +93,8 @@ public class Definition {
     public Definition() {
         messages        = new ArrayList<Message>();
         services        = new ArrayList<Service>();
-        prototype       = new Prototype();
-        binding         = new Binding();
+        bindings        = new ArrayList<Binding>();
+        portType        = new PortType();
         importDefinition= new Import();
     }
 
@@ -90,29 +103,31 @@ public class Definition {
         this.targetNameSpace = targetNameSpace;
         messages        = new ArrayList<Message>();
         services        = new ArrayList<Service>();
-        prototype       = new Prototype();
-        binding         = new Binding();
+        bindings        = new ArrayList<Binding>();
+        portType        = new PortType();
         importDefinition= new Import();
     }
 
-    public Definition(String name, String targetNameSpace, ArrayList<Message> messages, ArrayList<Service> services, Prototype prototype, Binding binding, Import importDefinition) {
+    public Definition(String name, String targetNameSpace, ArrayList<Message> messages, ArrayList<Service> services, ArrayList<Binding> bindings, PortType portType, Import importDefinition, Types types) {
         this.name = name;
         this.targetNameSpace = targetNameSpace;
         this.messages = messages;
         this.services = services;
-        this.prototype = prototype;
-        this.binding = binding;
-        this.importDefinition = importDefinition;
-    }
-
-    public Definition(String name, String targetNameSpace, ArrayList<Message> messages, ArrayList<Service> services, Prototype prototype, Binding binding, Import importDefinition, Types types) {
-        this.name = name;
-        this.targetNameSpace = targetNameSpace;
-        this.messages = messages;
-        this.services = services;
-        this.prototype = prototype;
-        this.binding = binding;
+        this.bindings = bindings;
+        this.portType = portType;
         this.importDefinition = importDefinition;
         this.types = types;
+    }
+
+    public void addMessage(Message message) {
+        this.messages.add(message);
+    }
+
+    public void addService(Service service) {
+        this.services.add(service);
+    }
+
+    public void addBinding(Binding binding) {
+        this.bindings.add(binding);
     }
 }

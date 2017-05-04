@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<wsdl>
-    <clientURL>/c/client.c</clientURL>
-    <date>10/11/1999</date>
-    <id>1</id>
-    <providerURL>/c/test.net</providerURL>
-</wsdl>
