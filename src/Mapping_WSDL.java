@@ -16,7 +16,7 @@ import java.io.InputStreamReader;
 /**
  * Created by l.IsSaM.l on 03/05/2017.
  */
-public class XmlToObject {
+public class Mapping_WSDL {
 
     private static final String nameFile = "wadl4";
 

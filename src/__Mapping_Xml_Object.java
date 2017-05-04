@@ -3,12 +3,6 @@ import WADL.Doc;
 import WADL.Param;
 import WADL.Resource;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.Unmarshaller;
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLStreamReader;
-import javax.xml.stream.util.StreamReaderDelegate;
-import java.io.FileInputStream;
 import java.util.List;
 
 /**
@@ -26,7 +20,7 @@ public class __Mapping_Xml_Object {
 
             //-------------------------------------- Convert From File WADL to Object --------------------------------------//
 
-            Application application = XmlToObject.getObjectFromWADL("Myapplication.wadl");
+            Application application = Mapping_WSDL.getObjectFromWADL("Myapplication.wadl");
 
 
             //System.out.println(application);
