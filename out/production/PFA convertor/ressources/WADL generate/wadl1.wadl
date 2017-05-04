@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <grammars>
+        <include href="NewsSearchResponse.xsd"/>
+        <include href="Error.xsd"/>
+    </grammars>
+    <resources base="http://api.search.yahoo.com/NewsSearchService/V1/">
+        <resource path="newsSearch">
+            <method id="search" name="GET">
+                <request>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="appid" style="query" type="xs:string" required="true"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="query" style="query" type="xs:string" required="true"/>
+                    <param name="type" style="query" default="all">
+                        <option value="all"/>
+                        <option value="any"/>
+                        <option value="phrase"/>
+                    </param>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="results" style="query" type="xs:int" default="10"/>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="start" style="query" type="xs:int" default="1"/>
+                    <param name="sort" style="query" default="rank">
+                        <option value="rank"/>
+                        <option value="date"/>
+                    </param>
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="language" style="query" type="xs:string"/>
+                </request>
+                <response status="200">
+                    <representation xmlns:yn="urn:yahoo:yn" element="yn:ResultSet" mediaType="application/xml"/>
+                </response>
+                <response status="400">
+                    <representation xmlns:ya="urn:yahoo:api" element="ya:Error" mediaType="application/xml"/>
+                </response>
+            </method>
+        </resource>
+    </resources>
+</application>

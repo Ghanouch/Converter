@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema elementFormDefault="qualified" version="1.0" 
+           targetNamespace="http://schemas.xmlsoap.org/wsdl/" 
+           xmlns:tns="http://schemas.xmlsoap.org/wsdl/" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="definitions" type="tns:Definitions"/>
+  
+  <xs:complexType name="Definitions">
+    <xs:complexContent>
+      <xs:extension base="tns:ExtensibleDocumented">
+        <xs:sequence>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="import" type="tns:Import"/>
+            <xs:element name="types" type="tns:Types"/>
+            <xs:element name="message" type="tns:Message"/>
+            <xs:element name="portType" type="tns:PortType"/>
+            <xs:element name="binding" type="tns:Binding"/>
+            <xs:element name="service" type="tns:Service"/>
+          </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="targetNamespace" type="xs:anyURI"/>
+        <xs:attribute name="name" type="xs:NCName"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ExtensibleDocumented" abstract="true">
+    <xs:complexContent>
+      <xs:extension base="tns:Documented">
+        <xs:sequence>
+          <xs:any processContents="lax" namespace="##other" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Documented">
+    <xs:sequence>
+      <xs:element name="documentation" type="tns:Documentation" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Import">
+    <xs:complexContent>
+      <xs:extension base="tns:ExtensibleAttributesDocumented">
+        <xs:sequence/>
+        <xs:attribute name="namespace" type="xs:anyURI" use="required"/>
+        <xs:attribute name="location" type="xs:anyURI" use="required"/>
+        <xs:anyAttribute namespace="##other" processContents="skip"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ExtensibleAttributesDocumented" abstract="true">
+    <xs:complexContent>
+      <xs:extension base="tns:Documented">
+        <xs:sequence/>
+        <xs:anyAttribute namespace="##other" processContents="skip"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Documentation" mixed="true">
+    <xs:sequence>
+      <xs:any processContents="lax" namespace="##other" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Service">
+    <xs:complexContent>
+      <xs:extension base="tns:ExtensibleDocumented">
+        <xs:sequence>
+          <xs:element name="port" type="tns:Port" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:NCName" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Port">
+    <xs:complexContent>
+      <xs:extension base="tns:ExtensibleDocumented">
+        <xs:sequence/>
+        <xs:attribute name="name" type="xs:NCName" use="required"/>
+        <xs:attribute name="binding" type="xs:QName" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Operation">
+    <xs:complexContent>
+      <xs:extension base="tns:ExtensibleDocumented">
+        <xs:sequence>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="fault" type="tns:tFault"/>
+            <xs:element name="input" type="tns:tParam"/>
+            <xs:element name="output" type="tns:tParam"/>
+          </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:NCName" use="required"/>
+        <xs:attribute name="parameterOrder">
+          <xs:simpleType>
+            <xs:list itemType="xs:NMTOKENS"/>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Types">
+    <xs:complexContent>
+      <xs:extension base="tns:ExtensibleDocumented">
+        <xs:sequence/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Message">
+    <xs:complexContent>
+      <xs:extension base="tns:ExtensibleDocumented">
+        <xs:sequence>
+          <xs:element name="part" type="tns:Part" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:NCName" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Part">
+    <xs:complexContent>
+      <xs:extension base="tns:ExtensibleAttributesDocumented">
+        <xs:sequence/>
+        <xs:attribute name="name" type="xs:NCName" use="required"/>
+        <xs:attribute name="element" type="xs:QName"/>
+        <xs:attribute name="type" type="xs:QName"/>
+        <xs:anyAttribute namespace="##other" processContents="skip"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Binding">
+    <xs:complexContent>
+      <xs:extension base="tns:ExtensibleDocumented">
+        <xs:sequence>
+          <xs:element name="operation" type="tns:BindingOperation" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:NCName" use="required"/>
+        <xs:attribute name="type" type="xs:QName" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="BindingOperation">
+    <xs:complexContent>
+      <xs:extension base="tns:ExtensibleDocumented">
+        <xs:sequence>
+          <xs:element name="input" type="tns:BindingOperationMessage" minOccurs="0"/>
+          <xs:element name="output" type="tns:BindingOperationMessage" minOccurs="0"/>
+          <xs:element name="fault" type="tns:BindingOperationFault" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:NCName" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="BindingOperationMessage">
+    <xs:complexContent>
+      <xs:extension base="tns:ExtensibleDocumented">
+        <xs:sequence/>
+        <xs:attribute name="name" type="xs:NCName"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="BindingOperationFault">
+    <xs:complexContent>
+      <xs:extension base="tns:ExtensibleDocumented">
+        <xs:sequence/>
+        <xs:attribute name="name" type="xs:NCName" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="PortType">
+    <xs:complexContent>
+      <xs:extension base="tns:ExtensibleAttributesDocumented">
+        <xs:sequence>
+          <xs:element name="operation" type="tns:Operation" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:NCName" use="required"/>
+        <xs:anyAttribute namespace="##other" processContents="skip"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="tFault">
+    <xs:complexContent>
+      <xs:extension base="tns:ExtensibleAttributesDocumented">
+        <xs:sequence/>
+        <xs:attribute name="name" type="xs:NCName" use="required"/>
+        <xs:attribute name="message" type="xs:QName" use="required"/>
+        <xs:anyAttribute namespace="##other" processContents="skip"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="tParam">
+    <xs:complexContent>
+      <xs:extension base="tns:ExtensibleAttributesDocumented">
+        <xs:sequence/>
+        <xs:attribute name="name" type="xs:NCName"/>
+        <xs:attribute name="message" type="xs:QName" use="required"/>
+        <xs:anyAttribute namespace="##other" processContents="skip"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>

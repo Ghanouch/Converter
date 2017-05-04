@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <doc xmlns:jersey="http://jersey.dev.java.net/" jersey:generatedBy="Jersey: 1.0-ea-SNAPSHOT 10/02/2008 12:17 PM"/>
+    <resources base="http://localhost:9998/storage/">
+        <resource path="/containers">
+            <method id="getContainers" name="GET">
+                <response>
+                    <representation mediaType="application/xml"/>
+                </response>
+            </method>
+            <resource path="{container}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="container" style="template" type="xs:string"/>
+                <method id="putContainer" name="PUT">
+                    <response>
+                        <representation mediaType="application/xml"/>
+                    </response>
+                </method>
+                <method id="deleteContainer" name="DELETE"/>
+                <method id="getContainer" name="GET">
+                    <request>
+                        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="search" style="query" type="xs:string"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/xml"/>
+                    </response>
+                </method>
+                <resource path="{item: .+}">
+                    <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="item" style="template" type="xs:string"/>
+                    <method id="putItem" name="PUT">
+                        <request>
+                            <representation mediaType="*/*"/>
+                        </request>
+                        <response>
+                            <representation mediaType="*/*"/>
+                        </response>
+                    </method>
+                    <method id="deleteItem" name="DELETE"/>
+                    <method id="getItem" name="GET">
+                        <response>
+                            <representation mediaType="*/*"/>
+                        </response>
+                    </method>
+                </resource>
+            </resource>
+        </resource>
+    </resources>
+</application>
