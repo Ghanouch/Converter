@@ -37,11 +37,14 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name = "definitions")
+@XmlType(name = "tDefinitions", propOrder = {
+    "anyTopLevelOptionalElement"
+})
+
+@XmlRootElement(name="definitions")
 public class TDefinitions
     extends TExtensibleDocumented
 {
-
 
     @XmlElements({
         @XmlElement(name = "import", type = TImport.class),
@@ -52,6 +55,9 @@ public class TDefinitions
         @XmlElement(name = "service", type = TService.class)
     })
     protected List<TDocumented> anyTopLevelOptionalElement;
+    @XmlAttribute(name = "targetNamespace")
+    @XmlSchemaType(name = "anyURI")
+    protected String targetNamespace;
     @XmlAttribute(name = "name")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlSchemaType(name = "NCName")
@@ -99,6 +105,9 @@ public class TDefinitions
      *     {@link String }
      *     
      */
+    public String getTargetNamespace() {
+        return targetNamespace;
+    }
 
     /**
      * D�finit la valeur de la propri�t� targetNamespace.
@@ -108,6 +117,9 @@ public class TDefinitions
      *     {@link String }
      *     
      */
+    public void setTargetNamespace(String value) {
+        this.targetNamespace = value;
+    }
 
     /**
      * Obtient la valeur de la propri�t� name.

@@ -2,7 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06407e67-9a5d-41c0-8917-e8319f5d7066" name="Default" comment="Mission Succes : WADL file to Object">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/XmlToObject_WSDL.java" afterPath="$PROJECT_DIR$/src/XmlToObject_WSDL.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/WSDL/package-info.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/Mapping_WSDL$XsiTypeReader.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/Mapping_WSDL$XsiTypeReader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TBinding.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TBindingOperation.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TBindingOperation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TBindingOperationFault.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TBindingOperationFault.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TBindingOperationMessage.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TBindingOperationMessage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TDefinitions.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TDefinitions.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TDocumentation.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TDocumentation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TDocumented.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TDocumented.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TExtensibilityElement.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TExtensibilityElement.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TFault.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TFault.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TImport.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TImport.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TMessage.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TMessage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TOperation.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TOperation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TParam.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TParam.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TPart.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TPart.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TPort.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TPort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TPortType.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TPortType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TService.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TTypes.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/TTypes.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/XmlToObject_WSDL.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/XmlToObject_WSDL.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/ObjectFactory.java" afterPath="$PROJECT_DIR$/src/WSDL/ObjectFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TBinding.java" afterPath="$PROJECT_DIR$/src/WSDL/TBinding.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TBindingOperation.java" afterPath="$PROJECT_DIR$/src/WSDL/TBindingOperation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TBindingOperationFault.java" afterPath="$PROJECT_DIR$/src/WSDL/TBindingOperationFault.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TBindingOperationMessage.java" afterPath="$PROJECT_DIR$/src/WSDL/TBindingOperationMessage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TDefinitions.java" afterPath="$PROJECT_DIR$/src/WSDL/TDefinitions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TDocumentation.java" afterPath="$PROJECT_DIR$/src/WSDL/TDocumentation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TDocumented.java" afterPath="$PROJECT_DIR$/src/WSDL/TDocumented.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TExtensibilityElement.java" afterPath="$PROJECT_DIR$/src/WSDL/TExtensibilityElement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TExtensibleAttributesDocumented.java" afterPath="$PROJECT_DIR$/src/WSDL/TExtensibleAttributesDocumented.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TExtensibleDocumented.java" afterPath="$PROJECT_DIR$/src/WSDL/TExtensibleDocumented.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TFault.java" afterPath="$PROJECT_DIR$/src/WSDL/TFault.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TImport.java" afterPath="$PROJECT_DIR$/src/WSDL/TImport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TMessage.java" afterPath="$PROJECT_DIR$/src/WSDL/TMessage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TOperation.java" afterPath="$PROJECT_DIR$/src/WSDL/TOperation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TParam.java" afterPath="$PROJECT_DIR$/src/WSDL/TParam.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TPart.java" afterPath="$PROJECT_DIR$/src/WSDL/TPart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TPort.java" afterPath="$PROJECT_DIR$/src/WSDL/TPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TPortType.java" afterPath="$PROJECT_DIR$/src/WSDL/TPortType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TService.java" afterPath="$PROJECT_DIR$/src/WSDL/TService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TTypes.java" afterPath="$PROJECT_DIR$/src/WSDL/TTypes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ressources/WSDL generate/GoogleSearch.wsdl" afterPath="$PROJECT_DIR$/src/ressources/WSDL generate/GoogleSearch.wsdl" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +61,8 @@
       <file leaf-file-name="XmlToObject_WSDL.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/XmlToObject_WSDL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="306">
+              <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -27,11 +70,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TDocumented.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WSDL/TDocumented.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="46" column="2" lean-forward="true" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Mapping_WSDL.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mapping_WSDL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="147" column="0" lean-forward="true" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+            <state relative-caret-position="151">
+              <caret line="133" column="27" lean-forward="true" selection-start-line="133" selection-start-column="27" selection-end-line="133" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#readFile#0;class#Mapping_WSDL#0" expanded="false" />
@@ -40,31 +93,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TPart.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WSDL/TPart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TDefinitions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WSDL/TDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TDocumented.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WSDL/TDocumented.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="44" column="35" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TImport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WSDL/TImport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            <state relative-caret-position="374">
+              <caret line="41" column="2" lean-forward="true" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -73,8 +116,8 @@
       <file leaf-file-name="sample.wsdl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ressources/WSDL examples/sample.wsdl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="21" />
+            <state relative-caret-position="459">
+              <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -108,12 +151,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/Converter.java" />
         <option value="$PROJECT_DIR$/src/WADL/Doc.java" />
-        <option value="$PROJECT_DIR$/src/WSDL/TPart.java" />
         <option value="$PROJECT_DIR$/src/Mapping_WSDL.java" />
         <option value="$PROJECT_DIR$/src/WSDL/package-info.java" />
         <option value="$PROJECT_DIR$/src/ressources/WSDL generate/bank.wsdl" />
-        <option value="$PROJECT_DIR$/src/WSDL/TDefinitions.java" />
         <option value="$PROJECT_DIR$/src/XmlToObject_WSDL.java" />
+        <option value="$PROJECT_DIR$/src/WSDL/TPart.java" />
+        <option value="$PROJECT_DIR$/src/WSDL/TDefinitions.java" />
       </list>
     </option>
   </component>
@@ -211,28 +254,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WSDL generate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PFA convertor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PFA convertor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ressources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WSDL examples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -780,7 +801,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6372000" />
+    <option name="totallyTimeSpent" value="6661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -793,10 +814,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5021322" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26218852" sideWeight="0.50319827" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30119178" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26218852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26218852" sideWeight="0.4968017" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -882,9 +903,9 @@
     <MESSAGE value="WADL Object: Apré tous les implé" />
     <MESSAGE value="&quot;Collect Code&quot;" />
     <MESSAGE value="add ressources" />
-    <MESSAGE value="Mission Succes : WADL file to Object" />
     <MESSAGE value="Mapping WSDL xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mapping WSDL xml" />
+    <MESSAGE value="Mission Succes : WADL file to Object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mission Succes : WADL file to Object" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -895,13 +916,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GENERATION Avec JAXB/WADL/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="58" column="24" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GENERATION Avec JAXB/WADL/Request.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1101,14 +1115,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WSDL/TDocumentation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WSDL/TBindingOperationFault.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1165,24 +1171,6 @@
         <state relative-caret-position="51">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WSDL/TPart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WSDL/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#531#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1290,46 +1278,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WSDL/TDefinitions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ressources/WSDL examples/sample.wsdl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WSDL/TImport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
-          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WSDL/TDocumented.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="44" column="35" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mapping_WSDL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="147" column="0" lean-forward="true" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#readFile#0;class#Mapping_WSDL#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1341,10 +1294,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/WSDL/TDocumentation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WSDL/TBindingOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WSDL/TPart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ressources/WSDL examples/sample.wsdl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WSDL/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WSDL/TDefinitions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="41" column="2" lean-forward="true" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WSDL/TDocumented.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="46" column="2" lean-forward="true" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mapping_WSDL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="133" column="27" lean-forward="true" selection-start-line="133" selection-start-column="27" selection-end-line="133" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#readFile#0;class#Mapping_WSDL#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/XmlToObject_WSDL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        <state relative-caret-position="306">
+          <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
