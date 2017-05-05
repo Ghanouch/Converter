@@ -1,9 +1,8 @@
-
+package Mapping;
 
 import WADL.*;
 
 import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.stream.XMLInputFactory;
@@ -12,53 +11,19 @@ import javax.xml.stream.util.StreamReaderDelegate;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
-
 /**
- * Created by l.IsSaM.l on 03/05/2017.
+ * Created by zGuindouOS on 05/05/2017.
  */
-public class Mapping_WSDL {
+public class WADLMapping {
 
     private static final String nameFile = "wadl4";
 
-    protected static class XsiTypeReader extends StreamReaderDelegate
-    {
-        public XsiTypeReader(XMLStreamReader reader) {
-            super(reader);
-        }
-        @Override
-        public String getNamespaceURI() {
-            return "";
-        }
-
-
-    }
-
-
     public static String getPathFrom(String nameFile)
     {
-        return "src\\ressources\\WADL examples\\" + nameFile;
+        return "src\\Ressources\\WADL\\WADL examples\\" + nameFile;
     }
+    public static String getPathGenerate(String nameFile) { return "src\\Ressources\\WADL\\WADL generate\\" + nameFile; }
 
-    public static String getPathGenerate(String nameFile) { return "src\\ressources\\WADL generate\\" + nameFile; }
-
-
-    public static void readFile(String nameFile)
-    {
-        FileInputStream fip;
-        int i;
-        try
-        {
-            fip = new FileInputStream("src\\ressources\\WADL examples\\"+nameFile);
-            InputStreamReader sc = new InputStreamReader(fip);
-            while((i = sc.read())!=-1) {
-                System.out.print((char)i);
-            }
-        }
-        catch (Exception e)
-        {
-            System.out.println(" Fichier introuvable" + e.getMessage());
-        }
-    }
 
     public static Application getObjectFromWADL(String nameFile)
     {
@@ -67,7 +32,7 @@ public class Mapping_WSDL {
             // Pour igoner la  balise de name space xmlns
             XMLInputFactory xif = XMLInputFactory.newFactory();
             XMLStreamReader xsr = xif.createXMLStreamReader(new FileInputStream(getPathFrom(nameFile+".wadl")));
-            xsr = new XsiTypeReader(xsr);
+            xsr = new XMLMapping.XsiTypeReader(xsr);
 
             // Unmarshall Xml --> Object
             JAXBContext jc = JAXBContext.newInstance(Application.class);
@@ -92,14 +57,13 @@ public class Mapping_WSDL {
             JAXBContext jc = JAXBContext.newInstance(Application.class);
             Marshaller marshaller = jc.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-            marshaller.marshal(application, new File( getPathGenerate(nameFile+".wadl")));
+            marshaller.marshal(application, new File(getPathGenerate(nameFile+".wadl")));
         }catch(Exception e)
         {
             System.out.println(e.getMessage());
         }
 
     }
-
 
     public static void main(String[] str)
     {
@@ -144,22 +108,10 @@ public class Mapping_WSDL {
             System.out.println("Convert From Object To File");
             ConvertWADLObjectToXML(application, nameFile);
 
-
-
             System.out.println(" - -  Succes Mission !! - - ");
         }catch(Exception e)
         {
             System.out.println("Error ETAPE 3 : " +e.getMessage());
         }
-
-
-
-
-
-
     }
-
-
-
-
 }

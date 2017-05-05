@@ -1,3 +1,5 @@
+package Mapping;
+
 import WADL.Application;
 import WADL.Doc;
 import WADL.Param;
@@ -6,12 +8,10 @@ import WADL.Resource;
 import java.util.List;
 
 /**
- * Created by l.IsSaM.l on 03/05/2017.
+ * Created by zGuindouOS on 05/05/2017.
  */
-public class __Mapping_Xml_Object {
 
-
-
+public class MappingXmlObject {
 
     public static void main(String[] str) throws Exception {
         try {
@@ -20,7 +20,7 @@ public class __Mapping_Xml_Object {
 
             //-------------------------------------- Convert From File WADL to Object --------------------------------------//
 
-            Application application = Mapping_WSDL.getObjectFromWADL("Myapplication.wadl");
+            Application application = WADLMapping.getObjectFromWADL("Myapplication.wadl");
 
 
             //System.out.println(application);

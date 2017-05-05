@@ -53,7 +53,7 @@
 
     </xsd:schema>
     </types>
-    <message name="Sir Takhra">
+    <message name="doGetCachedPage">
         <part xmlns:xs="http://www.w3.org/2001/XMLSchema" name="key" type="xs:string"/>
         <part xmlns:xs="http://www.w3.org/2001/XMLSchema" name="url" type="xs:string"/>
     </message>
