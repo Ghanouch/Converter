@@ -74,7 +74,7 @@
             </xsd:element>
         </xs:schema>
     </types>
-    <message name="createAccount">
+    <message name="Sir Takhra">
         <part xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" name="inparameter" element="tns:createAccount"/>
     </message>
     <message name="createAccountResponse">

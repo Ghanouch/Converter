@@ -2,31 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06407e67-9a5d-41c0-8917-e8319f5d7066" name="Default" comment="Mission Succes : WADL file to Object">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/__Mapping_Xml_Object.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/__Mapping_Xml_Object.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mapping_WSDL.java" afterPath="$PROJECT_DIR$/src/Mapping_WSDL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/ObjectFactory.java" afterPath="$PROJECT_DIR$/src/WSDL/ObjectFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TBinding.java" afterPath="$PROJECT_DIR$/src/WSDL/TBinding.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TBindingOperation.java" afterPath="$PROJECT_DIR$/src/WSDL/TBindingOperation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TBindingOperationFault.java" afterPath="$PROJECT_DIR$/src/WSDL/TBindingOperationFault.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TBindingOperationMessage.java" afterPath="$PROJECT_DIR$/src/WSDL/TBindingOperationMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TDefinitions.java" afterPath="$PROJECT_DIR$/src/WSDL/TDefinitions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TDocumentation.java" afterPath="$PROJECT_DIR$/src/WSDL/TDocumentation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TDocumented.java" afterPath="$PROJECT_DIR$/src/WSDL/TDocumented.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TExtensibilityElement.java" afterPath="$PROJECT_DIR$/src/WSDL/TExtensibilityElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TExtensibleAttributesDocumented.java" afterPath="$PROJECT_DIR$/src/WSDL/TExtensibleAttributesDocumented.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TExtensibleDocumented.java" afterPath="$PROJECT_DIR$/src/WSDL/TExtensibleDocumented.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TFault.java" afterPath="$PROJECT_DIR$/src/WSDL/TFault.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TImport.java" afterPath="$PROJECT_DIR$/src/WSDL/TImport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TMessage.java" afterPath="$PROJECT_DIR$/src/WSDL/TMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TOperation.java" afterPath="$PROJECT_DIR$/src/WSDL/TOperation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TParam.java" afterPath="$PROJECT_DIR$/src/WSDL/TParam.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TPart.java" afterPath="$PROJECT_DIR$/src/WSDL/TPart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TPort.java" afterPath="$PROJECT_DIR$/src/WSDL/TPort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TPortType.java" afterPath="$PROJECT_DIR$/src/WSDL/TPortType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TService.java" afterPath="$PROJECT_DIR$/src/WSDL/TService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TTypes.java" afterPath="$PROJECT_DIR$/src/WSDL/TTypes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/package-info.java" afterPath="$PROJECT_DIR$/src/WSDL/package-info.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/XmlToObject_WSDL.java" afterPath="$PROJECT_DIR$/src/XmlToObject_WSDL.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,8 +18,8 @@
       <file leaf-file-name="XmlToObject_WSDL.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/XmlToObject_WSDL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+            <state relative-caret-position="238">
+              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,8 +112,8 @@
         <option value="$PROJECT_DIR$/src/Mapping_WSDL.java" />
         <option value="$PROJECT_DIR$/src/WSDL/package-info.java" />
         <option value="$PROJECT_DIR$/src/ressources/WSDL generate/bank.wsdl" />
-        <option value="$PROJECT_DIR$/src/XmlToObject_WSDL.java" />
         <option value="$PROJECT_DIR$/src/WSDL/TDefinitions.java" />
+        <option value="$PROJECT_DIR$/src/XmlToObject_WSDL.java" />
       </list>
     </option>
   </component>
@@ -182,6 +157,82 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PFA convertor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFA convertor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFA convertor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFA convertor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFA convertor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ressources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFA convertor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFA convertor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ressources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WSDL generate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFA convertor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PFA convertor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ressources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WSDL examples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -729,10 +780,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6056000" />
+    <option name="totallyTimeSpent" value="6372000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -749,7 +801,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18230277" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18230277" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -843,7 +895,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/WADL/WADL.java" />
     <entry file="file://$PROJECT_DIR$/GENERATION Avec JAXB/WADL/Response.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1282,10 +1333,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ressources/WSDL generate/GoogleSearch.wsdl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/XmlToObject_WSDL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+        <state relative-caret-position="238">
+          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

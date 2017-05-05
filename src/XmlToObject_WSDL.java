@@ -16,7 +16,7 @@ import java.io.FileInputStream;
  */
 public class XmlToObject_WSDL {
 
-    public static final String nameFile = "bank";
+    public static final String nameFile = "GoogleSearch";
 
     public static String getPathGenerate(String nameFile) { return "src\\ressources\\WSDL generate\\" + nameFile; }
 
