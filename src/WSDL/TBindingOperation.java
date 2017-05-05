@@ -1,12 +1,12 @@
 //
-// Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
+// Ce fichier a ï¿½tï¿½ gï¿½nï¿½rï¿½ par l'implï¿½mentation de rï¿½fï¿½rence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2017.05.03 à 01:46:17 AM WEST 
+// Toute modification apportï¿½e ï¿½ ce fichier sera perdue lors de la recompilation du schï¿½ma source. 
+// Gï¿½nï¿½rï¿½ le : 2017.05.03 ï¿½ 01:46:17 AM WEST 
 //
 
 
-package org.xmlsoap.schemas.wsdl;
+package WSDL;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 /**
  * <p>Classe Java pour tBindingOperation complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>Le fragment de schï¿½ma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="tBindingOperation">
@@ -60,7 +60,7 @@ public class TBindingOperation
     protected String name;
 
     /**
-     * Obtient la valeur de la propriété input.
+     * Obtient la valeur de la propriï¿½tï¿½ input.
      * 
      * @return
      *     possible object is
@@ -72,7 +72,7 @@ public class TBindingOperation
     }
 
     /**
-     * Définit la valeur de la propriété input.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ input.
      * 
      * @param value
      *     allowed object is
@@ -84,7 +84,7 @@ public class TBindingOperation
     }
 
     /**
-     * Obtient la valeur de la propriété output.
+     * Obtient la valeur de la propriï¿½tï¿½ output.
      * 
      * @return
      *     possible object is
@@ -96,7 +96,7 @@ public class TBindingOperation
     }
 
     /**
-     * Définit la valeur de la propriété output.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ output.
      * 
      * @param value
      *     allowed object is
@@ -137,7 +137,7 @@ public class TBindingOperation
     }
 
     /**
-     * Obtient la valeur de la propriété name.
+     * Obtient la valeur de la propriï¿½tï¿½ name.
      * 
      * @return
      *     possible object is
@@ -149,7 +149,7 @@ public class TBindingOperation
     }
 
     /**
-     * Définit la valeur de la propriété name.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ name.
      * 
      * @param value
      *     allowed object is

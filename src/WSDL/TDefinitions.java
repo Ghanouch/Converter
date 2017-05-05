@@ -1,22 +1,16 @@
 //
-// Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
+// Ce fichier a ï¿½tï¿½ gï¿½nï¿½rï¿½ par l'implï¿½mentation de rï¿½fï¿½rence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2017.05.03 à 01:46:17 AM WEST 
+// Toute modification apportï¿½e ï¿½ ce fichier sera perdue lors de la recompilation du schï¿½ma source. 
+// Gï¿½nï¿½rï¿½ le : 2017.05.03 ï¿½ 01:46:17 AM WEST 
 //
 
 
-package org.xmlsoap.schemas.wsdl;
+package WSDL;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElements;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
@@ -24,7 +18,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 /**
  * <p>Classe Java pour tDefinitions complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>Le fragment de schï¿½ma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="tDefinitions">
@@ -43,12 +37,11 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "tDefinitions", propOrder = {
-    "anyTopLevelOptionalElement"
-})
+@XmlRootElement(name = "definitions")
 public class TDefinitions
     extends TExtensibleDocumented
 {
+
 
     @XmlElements({
         @XmlElement(name = "import", type = TImport.class),
@@ -59,9 +52,6 @@ public class TDefinitions
         @XmlElement(name = "service", type = TService.class)
     })
     protected List<TDocumented> anyTopLevelOptionalElement;
-    @XmlAttribute(name = "targetNamespace")
-    @XmlSchemaType(name = "anyURI")
-    protected String targetNamespace;
     @XmlAttribute(name = "name")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlSchemaType(name = "NCName")
@@ -102,31 +92,25 @@ public class TDefinitions
     }
 
     /**
-     * Obtient la valeur de la propriété targetNamespace.
+     * Obtient la valeur de la propriï¿½tï¿½ targetNamespace.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getTargetNamespace() {
-        return targetNamespace;
-    }
 
     /**
-     * Définit la valeur de la propriété targetNamespace.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ targetNamespace.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setTargetNamespace(String value) {
-        this.targetNamespace = value;
-    }
 
     /**
-     * Obtient la valeur de la propriété name.
+     * Obtient la valeur de la propriï¿½tï¿½ name.
      * 
      * @return
      *     possible object is
@@ -138,7 +122,7 @@ public class TDefinitions
     }
 
     /**
-     * Définit la valeur de la propriété name.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ name.
      * 
      * @param value
      *     allowed object is

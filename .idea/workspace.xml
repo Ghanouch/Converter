@@ -2,81 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06407e67-9a5d-41c0-8917-e8319f5d7066" name="Default" comment="Mission Succes : WADL file to Object">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/ObjectFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TBinding.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TBindingOperation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TBindingOperationFault.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TBindingOperationMessage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TDefinitions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TDocumentation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TDocumented.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TExtensibilityElement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TExtensibleAttributesDocumented.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TExtensibleDocumented.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TFault.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TImport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TMessage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TOperation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TParam.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TPart.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TPort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TPortType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/TTypes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WSDL/package-info.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WsdlMapping.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ressources/WSDL examples/GoogleSearch.wsdl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ressources/WSDL examples/addNumbers.wsdl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ressources/WSDL examples/bank.wsdl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ressources/WSDL examples/hello_world_async.wsdl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ressources/WSDL examples/helloworld.wsdl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ressources/WSDL examples/sample.wsdl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ressources/WSDL examples/soap_header.wsdl" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/Application.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/Doc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/Doc_1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/Fault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/Grammars.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/HTTPMethods.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/Include.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/Link.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/MediaType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/Method.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/Option.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/Param.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/ParamStyle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/Representation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/Request.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/Resource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/Resources.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/Response.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WADL_/WADL.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/Binding.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/Definition.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/Element.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/Fault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/Import.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/Include.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/Input.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/Message.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/Operation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/Output.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/Part.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/Port.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/PortType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/Schema.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/Service.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/SoapAddress.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/SoapBinding.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/SoapBody.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/SoapOperation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/Types.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/WSDL/WSDL.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/XmlToObject$XsiTypeReader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PFA convertor/XmlToObject.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PFA convertor/__Mapping_Xml_Object.class" afterPath="$PROJECT_DIR$/out/production/PFA convertor/__Mapping_Xml_Object.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mapping_WSDL.java" afterPath="$PROJECT_DIR$/src/Mapping_WSDL.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/ObjectFactory.java" afterPath="$PROJECT_DIR$/src/WSDL/ObjectFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TBinding.java" afterPath="$PROJECT_DIR$/src/WSDL/TBinding.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TBindingOperation.java" afterPath="$PROJECT_DIR$/src/WSDL/TBindingOperation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TBindingOperationFault.java" afterPath="$PROJECT_DIR$/src/WSDL/TBindingOperationFault.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TBindingOperationMessage.java" afterPath="$PROJECT_DIR$/src/WSDL/TBindingOperationMessage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TDefinitions.java" afterPath="$PROJECT_DIR$/src/WSDL/TDefinitions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TDocumentation.java" afterPath="$PROJECT_DIR$/src/WSDL/TDocumentation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TDocumented.java" afterPath="$PROJECT_DIR$/src/WSDL/TDocumented.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TExtensibilityElement.java" afterPath="$PROJECT_DIR$/src/WSDL/TExtensibilityElement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TExtensibleAttributesDocumented.java" afterPath="$PROJECT_DIR$/src/WSDL/TExtensibleAttributesDocumented.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TExtensibleDocumented.java" afterPath="$PROJECT_DIR$/src/WSDL/TExtensibleDocumented.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TFault.java" afterPath="$PROJECT_DIR$/src/WSDL/TFault.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TImport.java" afterPath="$PROJECT_DIR$/src/WSDL/TImport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TMessage.java" afterPath="$PROJECT_DIR$/src/WSDL/TMessage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TOperation.java" afterPath="$PROJECT_DIR$/src/WSDL/TOperation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TParam.java" afterPath="$PROJECT_DIR$/src/WSDL/TParam.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TPart.java" afterPath="$PROJECT_DIR$/src/WSDL/TPart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TPort.java" afterPath="$PROJECT_DIR$/src/WSDL/TPort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TPortType.java" afterPath="$PROJECT_DIR$/src/WSDL/TPortType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TService.java" afterPath="$PROJECT_DIR$/src/WSDL/TService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/TTypes.java" afterPath="$PROJECT_DIR$/src/WSDL/TTypes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WSDL/package-info.java" afterPath="$PROJECT_DIR$/src/WSDL/package-info.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/XmlToObject_WSDL.java" afterPath="$PROJECT_DIR$/src/XmlToObject_WSDL.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -90,11 +40,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="XmlToObject_WSDL.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="XmlToObject_WSDL.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/XmlToObject_WSDL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="185">
+              <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TDefinitions.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TDefinitions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WSDL/TDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -768,11 +718,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493918896483</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Mapping WSDL xml">
+      <created>1493945703968</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1493945703968</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5914000" />
+    <option name="totallyTimeSpent" value="6056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -874,7 +831,8 @@
     <MESSAGE value="&quot;Collect Code&quot;" />
     <MESSAGE value="add ressources" />
     <MESSAGE value="Mission Succes : WADL file to Object" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mission Succes : WADL file to Object" />
+    <MESSAGE value="Mapping WSDL xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mapping WSDL xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1257,22 +1215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WSDL/TImport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WSDL/TDocumented.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="44" column="35" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ressources/WSDL generate/bank.wsdl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1297,6 +1239,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/WSDL/TDefinitions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ressources/WSDL examples/sample.wsdl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WSDL/TImport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WSDL/TDocumented.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="44" column="35" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Mapping_WSDL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1310,27 +1284,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/XmlToObject_WSDL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="185">
+          <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ressources/WSDL examples/sample.wsdl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WSDL/TDefinitions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

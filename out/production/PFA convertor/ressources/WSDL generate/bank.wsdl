@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions xmlns:ns2="http://schemas.xmlsoap.org/wsdl/">
+    <corba:typeMapping xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://cxf.apache.org/schemas/cxf/idl/bank/typemap">
+        <corba:struct xmlns="http://cxf.apache.org/schemas/cxf/idl/bank/typemap" xmlns:ns4="http://cxf.apache.org/schemas/cxf/idl/bank" name="Account" repositoryID="IDL:Account:1.0" type="ns4:Account">
+            <corba:member idltype="corba:string" name="name"/>
+            <corba:member idltype="corba:long" name="balance"/>
+        </corba:struct>
+        <corba:exception xmlns="http://cxf.apache.org/schemas/cxf/idl/bank/typemap" xmlns:ns4="http://cxf.apache.org/schemas/cxf/idl/bank" name="AccountNotFoundException" repositoryID="IDL:AccountNotFoundException:1.0" type="ns4:AccountNotFoundExceptionType">
+            <corba:member idltype="corba:string" name="name"/>
+        </corba:exception>
+        <corba:exception xmlns="http://cxf.apache.org/schemas/cxf/idl/bank/typemap" xmlns:ns4="http://cxf.apache.org/schemas/cxf/idl/bank" name="AccountAlreadyExistsException" repositoryID="IDL:AccountAlreadyExistsException:1.0" type="ns4:AccountAlreadyExistsExceptionType">
+            <corba:member idltype="corba:string" name="name"/>
+        </corba:exception>
+    </corba:typeMapping>
+    <types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://cxf.apache.org/schemas/cxf/idl/bank" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://cxf.apache.org/schemas/cxf/idl/bank">
+            <xsd:complexType name="Account">
+                <xsd:sequence>
+                    <xsd:element name="name" type="xs:string">
+                    </xsd:element>
+                    <xsd:element name="balance" type="xs:int">
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:element name="AccountNotFoundException" type="AccountNotFoundExceptionType">
+            </xsd:element>
+            <xsd:complexType name="AccountNotFoundExceptionType">
+                <xsd:sequence>
+                    <xsd:element name="name" type="xs:string">
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:element name="AccountAlreadyExistsException" type="AccountAlreadyExistsExceptionType">
+            </xsd:element>
+            <xsd:complexType name="AccountAlreadyExistsExceptionType">
+                <xsd:sequence>
+                    <xsd:element name="name" type="xs:string">
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:element name="getAccountResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="return" type="Account">
+                        </xsd:element>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getAccount">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="name" type="xs:string">
+                        </xsd:element>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="createAccountResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="return" type="xs:boolean">
+                        </xsd:element>
+                        <xsd:element name="account" type="Account">
+                        </xsd:element>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="createAccount">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="name" type="xs:string">
+                        </xsd:element>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xs:schema>
+    </types>
+    <message name="createAccount">
+        <part xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" name="inparameter" element="tns:createAccount"/>
+    </message>
+    <message name="createAccountResponse">
+        <part xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" name="outparameter" element="tns:createAccountResponse"/>
+    </message>
+    <message name="getAccount">
+        <part xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" name="inparameter" element="tns:getAccount"/>
+    </message>
+    <message name="AccountAlreadyExistsException">
+        <part xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" name="exception" element="tns:AccountAlreadyExistsException"/>
+    </message>
+    <message name="AccountNotFoundException">
+        <part xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" name="exception" element="tns:AccountNotFoundException"/>
+    </message>
+    <message name="getAccountResponse">
+        <part xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" name="outparameter" element="tns:getAccountResponse"/>
+    </message>
+    <portType name="Bank">
+        <operation name="getAccount">
+            <wsdl:input xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" xmlns:xsd="http://www.w3.org/2001/XMLSchema" message="tns:getAccount" name="getAccountRequest"/>
+            <wsdl:output xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" xmlns:xsd="http://www.w3.org/2001/XMLSchema" message="tns:getAccountResponse" name="getAccountResponse"/>
+            <wsdl:fault xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" xmlns:xsd="http://www.w3.org/2001/XMLSchema" message="tns:AccountNotFoundException" name="AccountNotFoundException"/>
+        </operation>
+        <operation name="createAccount">
+            <wsdl:input xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" xmlns:xsd="http://www.w3.org/2001/XMLSchema" message="tns:createAccount" name="createAccountRequest"/>
+            <wsdl:output xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" xmlns:xsd="http://www.w3.org/2001/XMLSchema" message="tns:createAccountResponse" name="createAccountResponse"/>
+            <wsdl:fault xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" xmlns:xsd="http://www.w3.org/2001/XMLSchema" message="tns:AccountAlreadyExistsException" name="AccountAlreadyExistsException"/>
+        </operation>
+    </portType>
+    <binding xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" name="BankSOAPBinding" type="tns:Bank">
+        <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="getAccount">
+            <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" soapAction="" style="document"/>
+            <input name="getAccountRequest">
+                <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" use="literal"/>
+            </input>
+            <output name="getAccountResponse">
+                <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" use="literal"/>
+            </output>
+            <fault name="AccountNotFoundException">
+                <soap:fault xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AccountNotFoundException" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="createAccount">
+            <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="createAccount"/>
+            <input name="createAccountRequest">
+                <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" use="literal"/>
+            </input>
+            <output name="createAccountResponse">
+                <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" use="literal"/>
+            </output>
+            <fault name="AccountAlreadyExistsException">
+                <soap:fault xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AccountAlreadyExistsException" use="literal"/>
+            </fault>
+        </operation>
+    </binding>
+    <binding xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" name="BankCORBABinding" type="tns:Bank">
+        <corba:binding xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" repositoryID="IDL:cxf/Bank:1.0"/>
+        <operation name="getAccount">
+            <corba:operation xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="getAccount">
+                <corba:param idltype="corba:string" mode="in" name="name"/>
+                <corba:return xmlns="http://cxf.apache.org/schemas/cxf/idl/bank/typemap" idltype="Account" name="return"/>
+                <corba:raises xmlns="http://cxf.apache.org/schemas/cxf/idl/bank/typemap" exception="AccountNotFoundException"/>
+            </corba:operation>
+            <input name="getAccountRequest"/>
+            <output name="getAccountResponse"/>
+            <fault name="AccountNotFoundException"/>
+        </operation>
+        <operation name="createAccount">
+            <corba:operation xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="createAccount">
+                <corba:param idltype="corba:string" mode="in" name="name"/>
+                <corba:param xmlns="http://cxf.apache.org/schemas/cxf/idl/bank/typemap" idltype="Account" mode="out" name="account"/>
+                <corba:return idltype="corba:boolean" name="return"/>
+                <corba:raises xmlns="http://cxf.apache.org/schemas/cxf/idl/bank/typemap" exception="AccountAlreadyExistsException"/>
+            </corba:operation>
+            <input name="createAccountRequest"/>
+            <output name="createAccountResponse"/>
+            <fault name="AccountAlreadyExistsException"/>
+        </operation>
+    </binding>
+    <service name="BankSOAPService">
+        <port xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" name="BankSOAPPort" binding="tns:BankSOAPBinding">
+            <soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" location="http://localhost:10000/bank/BankSOAPService"/>
+        </port>
+    </service>
+    <service name="BankCORBAService">
+        <port xmlns:tns="http://cxf.apache.org/schemas/cxf/idl/bank" name="BankCORBAPort" binding="tns:BankCORBABinding">
+            <corba:address xmlns:corba="http://cxf.apache.org/bindings/corba" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" location="file:./build/bank.ref"/>
+        </port>
+    </service>
+</definitions>

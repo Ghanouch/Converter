@@ -20,7 +20,7 @@ public class Mapping_WSDL {
 
     private static final String nameFile = "wadl4";
 
-    private static class XsiTypeReader extends StreamReaderDelegate
+    protected static class XsiTypeReader extends StreamReaderDelegate
     {
         public XsiTypeReader(XMLStreamReader reader) {
             super(reader);

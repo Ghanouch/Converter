@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions xmlns:ns2="http://schemas.xmlsoap.org/wsdl/" name="StockQuoteService">
+    <message name="getQuoteInput">
+        <part xmlns:xs="http://www.w3.org/2001/XMLSchema" name="symbol" type="xs:string"/>
+    </message>
+    <message name="getQuoteOutput">
+        <part xmlns:xs="http://www.w3.org/2001/XMLSchema" name="quote" type="xs:float"/>
+    </message>
+    <portType name="GetQuote">
+        <operation name="getQuote">
+            <input xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:xmltoday-delayed-quotes" xmlns:xsd="http://www.w3.org/2001/XMLSchema" message="tns:getQuoteInput"/>
+            <output xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:xmltoday-delayed-quotes" xmlns:xsd="http://www.w3.org/2001/XMLSchema" message="tns:getQuoteOutput"/>
+        </operation>
+    </portType>
+    <binding xmlns:tns="urn:xmltoday-delayed-quotes" name="GetQuoteSoapBinding" type="tns:GetQuote">
+        <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="getQuote">
+            <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" soapAction=""/>
+            <input>
+                <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:xmltoday-delayed-quotes" use="encoded"/>
+            </input>
+            <output>
+                <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:xmltoday-delayed-quotes" use="encoded"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="StockQuoteService">
+        <port xmlns:tns="urn:xmltoday-delayed-quotes" name="StockQuotePort" binding="tns:GetQuoteSoapBinding">
+            <soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" location="http://www.fremantle.org/soap/servlet/rpcrouter"/>
+        </port>
+    </service>
+</definitions>
